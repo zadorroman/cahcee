@@ -41,7 +41,7 @@ body, html {
 .fresh-life {
 	background: url('../images/background.jpg')no-repeat top center;
 	background-size: cover;
-	min-height: 1000px;
+    height: 100vh;
 }
 
 .fhesh-life__header {
@@ -135,7 +135,7 @@ body, html {
 	width: 200px;
 	margin: 0 auto;
 	text-transform: uppercase;
-	padding: 20px 15px;
+	padding: 15px;
 	background: transparent;
 	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .5);
 	text-align: center;
@@ -238,6 +238,9 @@ body, html {
 	margin-top: 100px;
 }
 
+.services__menu {
+	margin: 80px 0;
+}
 
 .services__image {
 	position: relative;
@@ -247,14 +250,21 @@ body, html {
 	position: absolute;
 	top: 40%;
 	left: 0;
-	margin: auto;
 }
 
 .services__item {
-	width: 200px;
+
 	background: var(--color-white);
-	padding: 15px 0;
-	margin-bottom: 10px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+
+.services__link {
+	text-decoration: none;
+	width: 400px;
+	color: var(--color-black);
+	font: 700 20px/27px var(--font-Raleway);
 }
 
 .blog {
@@ -351,28 +361,14 @@ body, html {
 }
 
 .link__blog {
-	margin: 0 auto;
-	text-transform: uppercase;
-	padding: 20px 40px;
+	margin: 0 auto 120px;
+}
+
+.link--red {
 	background: #f72b3b;
-	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .5);
-	text-align: center;
-	transition: all .5s;
 }
 
-.link__blog a {
-	white-space: nowrap;
-	text-decoration: none;
-	color: var(--color-white);
-	font: 300 20px var(--font-Raleway);
-	letter-spacing: 0.5px;
-	transition: all .3s;
-}
 
-.link__blog:hover, .link__blog:hover a  {
-	font-weight: 700;
-	transform: scale(1.03);
-}
 
 .contact {
 	padding-top: 1px;
