@@ -154,8 +154,6 @@ body, html {
 	height: 0;
 	left: 0;
 	bottom: 50%;
-	transition: all .5s;
-	visibility: none;
 	opacity: 0;
 	z-index: -1;
 	margin: auto;
@@ -487,6 +485,6 @@ input:focus, input:not(:placeholder-shown), .field:focus, .field:not(:placeholde
 	color: #ff2b58;
 }
 
-.logo_footer:hover {
-	transform: scale(1.1);
+.footer__row {
+	align-items: center;
 }
