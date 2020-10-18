@@ -35,15 +35,18 @@
 				</ul>
 			</header>
 			<main class="col-4 fresh-life__main">
-				<h1 class="title">Fresh Life</h1>
-				<p class="main__text">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+				<h1 class="title title--fresh">Fresh Life</h1>
+				<p class="main__text main__text--fresh">Sed do eiusmod tempor incididunt ut labore et dolore magna
+					aliqua. Ut enim ad
 					minim veniam,
 					quis
 					nostrud exercitation ullamco.</p>
-				<div class="link link--orange">
-					<a href="#">Get free now</a>
+				<div class="link__box link__box--orange">
+					<a href="#" class="link">Get free now</a>
 				</div>
+
 			</main>
+			<a href="#about" class="fresh-life__scroll"><img src="images/scroll.png" alt="scroll"></a>
 
 
 		</div>
@@ -51,12 +54,11 @@
 
 	<section class="about" id="about">
 		<div class="container about__container">
-			<main class="row about__main">
+			<main class="row">
 				<div class="col-6 about__img">
 					<img src="images/about_img.png" alt="about_img.jpg" class="img">
 				</div>
-				<div class="col-1"></div>
-				<div class="col-5 about__text">
+				<div class="offset-1 col-5 about__text">
 					<h1 class="title title--white">
 						About Us
 					</h1>
@@ -78,34 +80,45 @@
 	<section class="services" id="services">
 		<div class="container">
 			<div class="row services__row">
-				<div class="col-4 offset-1  services__menu">
+				<div class="col-4 offset-1 row  services__menu">
 					<div class="services__item">
-						<a href="#" class="services__link">Online Shopping</a>
+						<a href="#" class="services__link" data-content="Online Shopping">Online Shopping</a>
+						<span class="services__icon">
+							<svg class="icon">
+								<use xlink:href="images/sprite.svg#shop"></use>
+							</svg>
+						</span>
 					</div>
-					<div class="services__icon">
-						i
+
+					<div class="services__item">
+						<a href="#" class="services__link" data-content="Quality Product">Quality Product</a>
+						<span class="services__icon">
+							<svg class="icon">
+								<use xlink:href="images/sprite.svg#hand"></use>
+							</svg>
+						</span>
+					</div>
+
+
+					<div class="services__item">
+						<a href="#" class="services__link" data-content="Domestic & International">Domestic &
+							International<br /> Delivery</a>
+						<span class="services__icon">
+							<svg class="icon">
+								<use xlink:href="images/sprite.svg#planet"></use>
+							</svg>
+						</span>
 					</div>
 					<div class="services__item">
-						<a href="#" class="services__link">Quality Product</a>
-					</div>
-					<div class="services__icon">
-						i
-					</div>
-					<div class="services__item">
-						<a href="#" class="services__link">Domestic & International Delivery</a>
-					</div>
-					<div class="services__icon">
-						i
-					</div>
-					<div class="services__item">
-						<a href="#" class="services__link">Well Organized</a>
-					</div>
-					<div class="services__icon">
-						i
+						<a href="#" class="services__link" data-content="Well Organized">Well Organized</a>
+						<span class="services__icon">
+							<svg class="icon">
+								<use xlink:href="images/sprite.svg#morkovka"></use>
+							</svg>
+						</span>
 					</div>
 				</div>
-				<div class="col-2"></div>
-				<div class="col-6">
+				<div class="offset-2 col-5">
 					<div class="services__image">
 						<img src="images/services_img.png" alt="services_img.png">
 					</div>
@@ -116,6 +129,68 @@
 				</div>
 			</div>
 		</div>
+	</section>
+
+	<section class="gallery" id="gallery">
+		<div class="container">
+			<div class="row">
+				<h1 class="title title--black">Gallery</h1>
+				<p class="main__text main__text--center offset-3">
+					Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+					enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat.
+				</p>
+			</div>
+			<div class="gallery__items row">
+				<div class="col-8">
+					<div class="gallery__item"><img src="images/gallery_img1.jpg" alt="gallery_img1.jpg"
+							class="item__picture"></div>
+				</div>
+				<div class="col-4">
+					<div class="gallery__item"><img src="images/gallery_img2.jpg" alt="gallery_img2.jpg"
+							class="item__picture"></div>
+
+					<div class="gallery__item"><img src="images/gallery_img3.jpg" alt="gallery_img3.jpg"
+							class="item__picture"></div>
+
+				</div>
+				<div class="col-6">
+					<div class="gallery__item"><img src="images/gallery_img4.jpg" alt="gallery_img4.jpg"
+							class="item__picture"></div>
+
+
+				</div>
+
+				<div class="col-6">
+					<div class="gallery__item"><img src="images/gallery_img5.jpg" alt="gallery_img5.jpg"
+							class="item__picture"></div>
+
+				</div>
+
+			</div>
+			<div class="link__box link__box--blue">
+				<a href="#" class="link">View more</a>
+			</div>
+		</div>
+	</section>
+
+	<section class="subscribe">
+		<div class="container">
+			<h1 class="title title--subscribe col-4">
+				Subscribe To Us
+			</h1>
+			<p class="main__text main__text--subscribe col-6">
+				Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+				aliqua. Ut enim ad minim veniam.
+			</p>
+			<form action="" class="subscribe__form">
+				<input type="email" placeholder="Your email..." class="subscribe__field col-6">
+				<button type="submit" class="link__box link__box--green">
+					<span class="link">Subscribe</span>
+				</button>
+			</form>
+		</div>
+
 	</section>
 
 
@@ -184,8 +259,8 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-12 col-md-6 col-lg-2 link link--red link__blog">
-				<a href="#">View more</a>
+			<div class="col-12 col-md-6 col-lg-2 link__box link__box--red link__blog">
+				<a href="#" class="link ">View more</a>
 			</div>
 		</div>
 	</section>
