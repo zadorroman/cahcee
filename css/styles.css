@@ -36,9 +36,10 @@ body, html {
 }
 
 .fresh-life {
-	background: url('../images/background.jpg')no-repeat fixed center;
-	background-size: cover;
-    height: 100vh;
+	background: url('../images/background.jpg')no-repeat fixed top center;
+    background-size: cover;
+    min-height: 1000px;
+    height: 100%;
 }
 
 .fhesh-life__header {
@@ -500,8 +501,9 @@ body, html {
 .contact {
 	padding-top: 1px;
 	background: url('../images/background-form.jpg') no-repeat fixed center;
-	background-size: cover;
-	height: 100vh;
+    background-size: cover;
+    min-height: 870px;
+    height: 100%;
 	flex: 1 0 auto;   /* sticky-footer */
 }
 
