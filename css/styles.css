@@ -1,4 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:wght@300;700;900&display=swap');
+
+@keyframes scroll{
+	0% {
+	  opacity:0;
+	  transform:  translate(0px,-25px)  ;
+	}
+	100% {
+	  opacity:1;
+	  transform:  translate(0px,0px)  ;
+	}
+  }
+
+@font-face {
+	font-family: 'icomoon';
+	src:  url('fonts/icomoon/icomoon.eot?i8bxjf');
+	src:  url('fonts/icomoon/icomoon.eot?i8bxjf#iefix') format('embedded-opentype'),
+	  url('fonts/icomoon/icomoon.ttf?i8bxjf') format('truetype'),
+	  url('fonts/icomoon/icomoon.woff?i8bxjf') format('woff'),
+	  url('fonts/icomoon/icomoon.svg?i8bxjf#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	font-display: block;
+  }
+
 :root {
 	--font-Pacifico: 'Pacifico', cursive;
 	--font-Raleway: 'Raleway', sans-serif;
@@ -30,6 +54,10 @@ body, html {
 
 html {
 	scroll-behavior: smooth;
+}
+
+body {
+	font: 300 16px var(--font-Raleway);
 }
 
 .container {	
@@ -95,7 +123,8 @@ html {
 .menu__link {
 	text-decoration: none;
 	color: var(--color-black);
-	font: 700 16px var(--font-Raleway);
+	font-weight: 700;
+	font-size: 16px;
 	text-transform: uppercase;
 	position: relative;
 }
@@ -120,7 +149,9 @@ html {
 /*end menu animation */
 
 .title {
-	font: 900 60px var(--font-Raleway);
+	font-size: 60px;
+	font-weight: 900;
+
 }
 
 .title--fresh {
@@ -128,7 +159,8 @@ html {
 }
 
 .main__text {
-	font: 300 17px var(--font-Raleway);
+	font-weight: 300;
+	font-size: 17px;
 }
 
 .main__text--fresh {
@@ -181,7 +213,8 @@ html {
 .link {
 	text-decoration: none;
 	color: var(--color-white);
-	font: 300 20px var(--font-Raleway);
+	font-weight: 300;
+	font-size: 20px;
 	letter-spacing: 0.5px;
 	transition: all .6s;	
 }
@@ -213,16 +246,7 @@ html {
 	animation-fill-mode:forwards; /*when the spec is finished*/
   }
 
-@keyframes scroll{
-	0% {
-	  opacity:0;
-	  transform:  translate(0px,-25px)  ;
-	}
-	100% {
-	  opacity:1;
-	  transform:  translate(0px,0px)  ;
-	}
-  }
+
   
 .about {
 	background: #00c4c4;
@@ -255,6 +279,7 @@ html {
 	background: #70bfff;
 	min-height: 790px;
 	padding-top: 1px;
+	padding-bottom: 1px;
 }
 
 .services__row {
@@ -318,7 +343,8 @@ html {
 .services__link {
 	text-decoration: none;
 	color: var(--color-black);
-	font: 700 20px/27px var(--font-Raleway);
+	font-weight: 700;
+	font-size: 20px/27px;
 	padding: 25px 30px;
 	width: 300px;
 	transition: all .2s;
@@ -384,7 +410,8 @@ html {
 }
 
 .subscribe__field {
-	font: 300 15px var(--font-Raleway);
+	font-size: 15px;
+	line-height: 27px;
     color: var(--color-black);
     background: #fff;
     border: 1px solid #000;
@@ -409,7 +436,8 @@ html {
 }
 
 .title__blog {
-	font: 700 90px var(--font-Raleway);
+	font-weight: 700;
+	font-size: 90px;
 	margin: 0 41.6% 20px;
 	margin-top: 100px;
 	display: flex;
@@ -417,7 +445,7 @@ html {
 }
 
 .text__blog {
-	font: 300 17px var(--font-Raleway);
+	font-size: 17px;
 	margin: 0 25% 45px;
 	justify-content: center;
 	text-align: center;
@@ -466,11 +494,13 @@ html {
 }
 
 .post__date time p:first-child {
-	font: 700 32px var(--font-Raleway);
+	font-weight: 700;
+	font-size: 32px;
 }
 
 .post__date time p:last-child {
-	font: 900 21px var(--font-Raleway);
+	font-weight: 900;
+	font-size: 21px;
 }
 
 .post__text {
@@ -480,12 +510,13 @@ html {
 
 .post__title {
 	margin-bottom: 25px;
-	font: 700 20px  var(--font-Raleway);
+	font-weight: 700;
+	font-size: 20px;
 	line-height: 25px;
 }
 
 .post__author {
-	font: 300 13px var(--font-Raleway);
+	font-size: 13px;
 }
 
 .post__blog img {
@@ -512,7 +543,8 @@ html {
 }
 
 .title__contact {
-	font: 700 90px var(--font-Raleway);
+	font-weight: 700;
+	font-size: 90px;
 	margin: 100px auto 45px;
 	color: var(--color-black);
 	text-align: center;
@@ -521,7 +553,7 @@ html {
 }
 
 .text__contact {
-	font: 300 17px var(--font-Raleway);
+	font-size: 17px;
 	margin: 0 auto 40px;
 	text-align: center;
 	line-height: 25px;
@@ -535,7 +567,7 @@ html {
 }
 
 .field {
-	font: 300 15px var(--font-Raleway);
+	font-size: 15px;
     color: var(--color-white);
     background: rgba(0, 196, 196, .5);
     border-left: 5px solid transparent;
@@ -549,7 +581,7 @@ html {
 	color: var(--color-white);
 }
 
-.field::-webkit-input-placeholde  {
+.field::-webkit-input-placeholder  {
 	transition: all .3s;
 }
 
@@ -567,12 +599,13 @@ html {
 }
 
 .info_title {
-	font: 700 17px var(--font-Raleway);
+	font-weight: 700;
+	font-size: 17px;
 	line-height: 25px;
 }
 
 .info_body {
-	font: 300 20px var(--font-Raleway);
+	font-size: 20px;
 	line-height: 25px;
 }
 
@@ -595,10 +628,6 @@ html {
 	flex-shrink: 0;   /* sticky-footer */
 }
 
-.aright_footer {
-	font: 300 16px var(--font-Raleway);
-}
-
 .logo_footer {
 	font: 400 25px var(--font-Pacifico);
 	transition: all .3s;
@@ -611,7 +640,7 @@ html {
 }
 
 .made_footer {
-	font: 300 15px var(--font-Raleway);
+	font-size: 15px;
 }
 
 .made_footer i {
@@ -622,3 +651,91 @@ html {
 .footer__row {
 	align-items: center;
 }
+
+[class^="icon-"], [class*=" icon-"] {
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: 'icomoon' !important;
+	speak: never;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	color: #262626;
+  
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-scroll {
+	  font-size: 50px;
+  }
+
+  .icon-scroll:before {
+	content: "\e904";
+  }
+  .icon-bulba:before {
+	content: "\e900";
+  }
+  .icon-morkva:before {
+	content: "\e901";
+  }
+  .icon-planet:before {
+	content: "\e902";
+  }
+  .icon-shop:before {
+	content: "\e903";
+  }
+
+
+
+@media screen and (-ms-high-contrast: active), 
+(-ms-high-contrast: none) {  
+	@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:wght@300;700;900&display=swap');
+
+    body {
+		font-family: 'Raleway', sans-serif;
+		color: #262626;
+	}
+
+	.logo, .logo_footer {
+		font-family: 'Pacifico', cursive;
+	}
+
+	.logo__link, .menu__link, .services__link, .link__box:hover .link {
+		color: #262626;
+	}
+	.main__text--fresh {
+		width: 400px;
+	}
+
+	.link__box::after {
+		background: #fff;
+	}
+
+	.main__text--white, .title--white, .blog, .link {
+		color: #fff;
+	}
+
+	.services__item {
+		background: #fff;
+	}
+
+	.field:-ms-input-placeholder, .field {
+		color: #fff;
+	}
+
+	.field:not(:-ms-input-placeholder) {
+		border-left: 5px solid #355b82;
+		background: rgba(0, 196, 196, 1);
+	}
+	.info_body a {
+		color: #262626;
+	}
+
+	.info_body a:hover {
+		border-bottom: 1px solid #262626;
+	}
+
+ }
