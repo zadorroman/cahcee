@@ -1,0 +1,177 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    color: #262626;
+}
+
+.logo, .logo_footer {
+    font-family: 'Pacifico', cursive;
+}
+
+.logo__link, .menu__link, .services__link, .link__box:hover .link {
+    color: #262626;
+}
+.main__text--fresh {
+    width: 400px;
+}
+
+.link__box::after {
+    background: #fff;
+}
+
+.main__text--white, .title--white, .blog, .link {
+    color: #fff;
+}
+
+.services__item {
+    background: #fff;
+}
+
+.field:-ms-input-placeholder, .field {
+    color: #fff;
+}
+
+.field:not(:-ms-input-placeholder) {
+    border-left: 5px solid #355b82;
+    background: rgba(0, 196, 196, 1);
+}
+.info_body a {
+    color: #262626;
+}
+
+.info_body a:hover {
+    border-bottom: 1px solid #262626;
+}
+
+.link__box--orange {
+    margin-bottom: 290px;
+}
+
+.contact_footer {
+    background: #262626;
+}
+
+.fhesh-life__header {
+    text-align: center;
+    position: relative;
+}
+
+.logo {
+    display: inline;
+    float: left;
+}
+
+.menu {
+    top: 100%;
+    position: absolute;
+    left: 45%;
+}
+
+
+.menu__item {
+    display: inline;
+}
+
+.menu__item:nth-child(6) .menu__link {
+    position: absolute;
+    top: 0;
+    left: 87%;
+}
+
+.icon-scroll {
+    position: relative;
+    left: 50%;
+}
+
+.about__container {
+    position: relative;
+}
+
+.about__text {
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+
+.services__block {
+    position: absolute;
+    top: 0;
+    left: 30%;
+}
+
+.services__row {
+    position: relative;
+}
+
+.services__menu {
+    display: table-caption;
+
+}
+
+.services__item {
+    display: inline-block;
+    height: 80px;
+}
+
+.services__link {
+    float: left;
+}
+
+.services__icon {
+    padding-top: 5%;
+    display: table;
+}
+
+.title--black {
+    text-align: center;
+}
+
+.gallery__items {
+    position: relative;
+}
+
+
+.gallery__items .col-4 {
+    top: 0;
+    left: 66%;
+    position: absolute;
+}
+
+.gallery__items .col-6:last-child {
+    left: 50%;
+    top: 59%;
+    position: absolute;
+}
+
+.posts__blog {
+    position: relative;
+}
+
+
+.posts__blog .col-4:nth-child(2) {
+    left: 33%;
+    top: 0;
+    position: absolute;
+}
+
+.posts__blog .col-4:nth-child(3) {
+    height: 300px;
+    left: 66%;
+    top: 0;
+    position: absolute;
+}
+
+.wrapper__contact {
+    position: relative;
+}
+
+.info__contact {
+    position: absolute;
+    left: 50%;
+    top: 0;
+}
+
+.footer__row, .aright_footer, .footer__row .logo, .made_footer {
+    display: inline;
+    float: none;
+}
+

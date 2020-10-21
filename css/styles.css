@@ -310,24 +310,19 @@ body {
 	align-items: center;
 	min-width: 400px;
 	max-height: 100px;
-	justify-content: space-between;
 	position: relative;
 	cursor: pointer;
 	transition: all .5s;
 	box-shadow: 0 4px 10px 0 rgba(0, 0, 0, .5);
 }
 
-.services__item:hover .services__link, .services__item:hover .icon, .services__item:hover  {
+.services__item:hover .services__link, .services__item:hover [class^="icon-"], .services__item:hover  {
 	color: #ff6033;
 	transform: scale(1.1);
-	fill: #ff6033;
 }
 
-.icon {
-	width: 50px;
-	height: 50px;
-	margin-right: 30px;
-	transition: all .2s;
+.services__icon {
+	padding-left: 15px;
 }
 
 .services__icon::before {
@@ -540,6 +535,7 @@ body {
     min-height: 870px;
     height: 100%;
 	flex: 1 0 auto;   /* sticky-footer */
+	padding-bottom: 1px;
 }
 
 .title__contact {
@@ -662,16 +658,14 @@ body {
 	text-transform: none;
 	line-height: 1;
 	color: #262626;
+	font-size: 50px;
+
   
 	/* Better Font Rendering =========== */
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
   }
   
-  .icon-scroll {
-	  font-size: 50px;
-  }
-
   .icon-scroll:before {
 	content: "\e904";
   }
@@ -736,6 +730,14 @@ body {
 
 	.info_body a:hover {
 		border-bottom: 1px solid #262626;
+	}
+
+	.link__box--orange {
+		margin-bottom: 290px;
+	}
+
+	.contact_footer {
+		background: #262626;
 	}
 
  }
