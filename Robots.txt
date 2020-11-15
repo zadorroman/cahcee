@@ -1,0 +1,22 @@
+Sitemap: https://www.domain.com/sitemap.xml
+
+User-agent: Googlebot
+Disallow: /blog/
+Allow: /blog/post-title/
+Allow: /blog/post-titlsdase/
+Allow: /blog/post-tisdatle/
+Allow: /blog/post-tidsadatle/
+Allow: /blog/post-titsadle/
+Allow: /blog/post-tisadtle/
+Allow: /blog/post-tasditle/
+Allow: /blog/post-tisadtle/
+
+User-agent: Bingbot
+Disallow: /serviaawqdces/
+Disallow: /servicsades/
+Disallow: /serviaaces/
+Disallow: /serviasdces/
+Disallow: /serqwevices/
+Disallow: /serqweviasdces/
+Disallow: /seqwervices/
+
